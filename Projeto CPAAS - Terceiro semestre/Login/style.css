@@ -1,0 +1,197 @@
+/* Importa a fonte Roboto Mono do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Define estilos básicos para o corpo da página */
+body {
+  margin: 0%;
+  font-family: "roboto mono", sans-serif;
+}
+
+/* Define a caixa de modelagem para o corpo da página */
+body {
+  box-sizing: border-box;
+}
+
+/* Define estilos para a seção principal de login */
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #8de3f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define estilos para a parte esquerda da tela de login */
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Define estilos para o título na parte esquerda da tela de login */
+.left-login>h1 {
+  font-size: 3vw;
+  color: black;
+}
+
+/* Define estilos para a imagem na parte esquerda da tela de login */
+.img-login {
+  width: 35vw;
+}
+
+/* Define estilos para a parte direita da tela de login */
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define estilos para o cartão de login */
+.card-login {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgb(46, 46, 46);
+}
+
+/* Define estilos para o título dentro do cartão de login */
+.card-login>h1 {
+  color: white;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Define estilos para os campos de texto */
+.textfiel {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+/* Define estilos para os campos de entrada */
+.textfiel>input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(217, 217, 217);
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px rgb(46, 46, 46);
+  outline: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* Define estilos para as etiquetas dos campos de texto */
+.textfiel>label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Define estilos para o texto de espaço reservado nos campos de entrada */
+.textfiel>input::placeholder {
+  color: rgba(255, 255, 255, 0.281);
+}
+
+/* Define estilos para o botão de login */
+.btn-login {
+  width: 80%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: 0%;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #0a0a0a;
+  background-color: #6fd1fb;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgb(46, 46, 46);
+}
+
+/* Define estilos responsivos para telas menores */
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+/* Define estilos responsivos para telas ainda menores */
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .left-login>h1 {
+    display: none; 
+  }
+
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-login {
+    width: 50vw;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}
+
+/* Define estilos para o link "Cadastre-se" */
+.cadastre-se {
+  text-decoration: none;
+  color: white;
+}
+
+/* Define estilos para o link "Esqueci minha senha" */
+.Esqueci {
+  text-decoration: none;
+  color: white;
+}
+
+/* Define o estilo do ID mensagensErro */
+#mensagensErro {
+  color: red;
+}
+
+/* Define estilos para o o botão de mostrar/ocultar senha */
+.textfiel {
+  position: relative;
+}
+
+/* Define estilos para o o botão de mostrar/ocultar senha */
+#senha {
+  padding-right: 40px; 
+}
+
+/* Define estilos para o o botão de mostrar/ocultar senha */
+.textfiel button {
+  position: absolute;
+  right: 5px;
+  top: 72%;
+  transform: translateY(-50%);
+  background-color: transparent; 
+  border: none;
+}
